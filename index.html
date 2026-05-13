@@ -165,6 +165,41 @@
       line-height: 1.7;
     }
 
+    /* Contact */
+    .contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    }
+
+    .contact-card {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: #1e293b;
+      padding: 18px 20px;
+      border-radius: 15px;
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+      background: #334155;
+    }
+
+    .contact-card img {
+      width: 35px;
+      height: 35px;
+    }
+
+    .contact-card span {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
     footer {
       text-align: center;
       padding: 25px;
@@ -198,6 +233,7 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#education">Pendidikan</a></li>
       <li><a href="#experience">Pengalaman</a></li>
+      <li><a href="#contact">Kontak</a></li>
     </ul>
   </nav>
 
@@ -281,6 +317,35 @@
 
     </div>
   </section>
+
+  <!-- Contact -->
+<section id="contact">
+  <h2 class="section-title">Kontak Saya</h2>
+
+  <div class="contact-container">
+
+    <a href="mailto:nandalubis535@gmail.com" target="_blank" class="contact-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
+      <span>nandalubis535@gmail.com</span>
+    </a>
+
+    <a href="https://instagram.com/nandarafikhi_" target="_blank" class="contact-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      <span>@nandarafikhi_</span>
+    </a>
+
+    <a href="https://linkedin.com/in/nandarafikhi" target="_blank" class="contact-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      <span>Nanda Rafikhi</span>
+    </a>
+
+    <a href="https://facebook.com/nanda.rafikhi.2025?locale=id_ID" target="_blank" class="contact-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+      <span>Nanda Rafikhi</span>
+    </a>
+
+  </div>
+</section>
 
   <!-- Footer -->
   <footer>
